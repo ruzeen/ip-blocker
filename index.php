@@ -4,7 +4,7 @@ function IP_Blocker() {
 
   $ip_config = array($_SERVER['HTTP_CLIENT_IP'], $_SERVER['HTTP_X_FORWARDED_FOR'], $_SERVER['HTTP_X_FORWARDED'], $_SERVER['HTTP_FORWARDED_FOR'], $_SERVER['HTTP_FORWARDED'], $_SERVER['REMOTE_ADDR'], $_SERVER['REMOTE_HOST']);
 
-  $blocked_ips = file('blocked_ips');
+  $blocked_ips = file('blocked_ips.txt');
 
   foreach ($ip_config as $guest_ip) {
     foreach ($blocked_ips as $bad_ip) {
