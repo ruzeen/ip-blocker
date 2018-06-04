@@ -9,7 +9,7 @@ function IP_Blocker() {
   foreach ($ip_config as $guest_ip) {
     foreach ($blocked_ips as $bad_ip) {
         if ($guest_ip == $bad_ip) {
-          header('Location: /blocked');
+          header('Location: blocked');
       }
     }
   }
