@@ -1,3 +1,3 @@
 # IP_Blocker
-Block the IP addresses you don't want visiting your site.<br>
+Block IP addresses from visiting a specific page on your website.<br>
 Edit blocked_ips.txt to add one IP address per line.
